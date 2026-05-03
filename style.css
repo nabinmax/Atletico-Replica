@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+/*Top Bar*/
+.top-bar-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.sponsors {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* margin-left: auto; pushes whole group to right */
+}
+
+/* Header */
+.header {
+  background: #E8151e;
+  color: white;
+  padding: 4px 0;
+  padding-top: 9px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+/* Main nav layout */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*navbar flex */
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* First nav (menu items) */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Push second nav to right */
+.secondnav {
+  margin-left: auto;
+}
+
+/* Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Icon styling */
+.secondnav i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://en.atleticodemadrid.com/system/file3s/95930/large/2WmRMLJmr-_JI9A9555.jpg?1776683469') center/cover no-repeat;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #c8102e;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.section.alt {
+  background: #eaeaea;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+.top-bar {
+  background: #282A6f; /* dark blue */
+  color: #ffffff;
+  font-size: Montserrat 11px ;
+  padding: 6.5px;
+}
+.top-bar-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sponsors img {
+  height: 20px;
+}
+#about {
+  background: linear-gradient(90deg, #282A6f);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+}
+#history h2 {
+  color: #282A6f;
+}
+#history .card {
+  background: rgba(230, 39, 39, 0.02); /* dark blue */
+  color: rgb(122, 108, 108);
+  border-top: 4px solid #E8151e; /* Atlético red accent */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+#history .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+#history .card strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #E8151e;
+  margin-bottom: 5px;
+}
+#history .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+#squad h2{
+  color: #282A6f;
+}
+/* Grid layout */
+#squad .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* Card style */
+#squad .card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+#squad .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Player name (top - like history heading) */
+#squad .card strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #282A6f;
+}
+
+/* Role (bottom text) */
+#squad .role {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Role colors */
+.role.forward {
+  color: #E8151e;
+}
+
+.role.centerback{
+  color: #E8151e;
+}
+
+.role.goalkeeper {
+  color: #E8151e;
+}
+/* Card image */
+#squad .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Keep card layout clean */
+#squad .card {
+  text-align: center;
+}
+
+/* Description text */
+#squad .card p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+#squad .card {
+  border: 2px solid #0b1f3a;
+  border-top: 4px solid #E8151e;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+#squad .card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.role {
+  padding: 4px 10px;
+  border: 2px solid #E8151e;
+  color: #E8151e;
+  border-radius: 20px;
+  background: transparent;
+}
+
+/* FIXTURES SECTION TITLE */
+#fixtures h2 {
+  color: #282A6f;
+}
+
+/* SLIDER WRAPPER */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* SLIDER CONTAINER */
+.fixtures-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  width: 100%;
+  cursor: grab;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* hide scrollbar */
+.fixtures-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.fixtures-slider:active {
+  cursor: grabbing;
+}
+
+/* MATCH CARD */
+.fixtures-slider .match-card {
+  min-width: 280px;
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, #282A6f);
+  color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.fixtures-slider .match-card:hover {
+  transform: translateY(-6px);
+}
+
+/* TEXT */
+.match-card strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.match-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  background: #E8151e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+
+.competition {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.venue {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: rgba(255,255,255,0.9);
+}
+
+.countdown {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/*Breaking News*/
+#breaking-news h2 {
+  color: #282A6f;
+}
